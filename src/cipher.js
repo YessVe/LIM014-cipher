@@ -1,6 +1,11 @@
 const cipher = {
   
   encode: function (clave,mensaje) {
+
+    if (clave==0 || clave=="" || isNaN(clave) || mensaje=="") {
+      throw TypeError("El Cosmo necesita una información clara.")
+    }
+
     var almacenCifrado= "";
     for (let i= 0; i<mensaje.length; i++){
         var numAscii= mensaje.charCodeAt(i);
@@ -12,41 +17,35 @@ const cipher = {
             almacenCifrado = almacenCifrado+txtCifrado;
             //si var mensaje está en minúscula, entonces
         } else if (numAscii>=97 && numAscii<=122) {
-            var cifCesar= ((numAscii-97 + parseInt(clave))%26+97);
-            var txtCifrado= String.fromCharCode(cifCesar);
+            cifCesar= ((numAscii-97 + parseInt(clave))%26+97);
+            txtCifrado= String.fromCharCode(cifCesar);
             almacenCifrado = almacenCifrado+txtCifrado;
         } 
    } return almacenCifrado 
   },
 
   decode: function (clave2,mnsCifrado){
+
+    if (clave2==0 || clave2=="" || isNaN(clave2) || mnsCifrado=="") {
+      throw TypeError("El Cosmo necesita una información clara.")
+    }
+
     var almacenDescifrado="";
     for (let i = 0; i < mnsCifrado.length; i++) {
         var numAscii2 = mnsCifrado.charCodeAt(i);
-      if (numAscii2>=65 && numAscii2<=90) {                    
-        if ((numAscii2 - clave2)<65) {
-          var descifCesar= numAscii2-clave2+26;
+        //mayúscula
+        if (numAscii2>=65 && numAscii2<=90) {
+          var descifCesar= ((numAscii2-90 - parseInt(clave2))%26+90);
           var txtDescifrado= String.fromCharCode(descifCesar);
-        } else {
-          var descifCesar= numAscii2-clave2;
-          var txtDescifrado= String.fromCharCode(descifCesar);
-        }
-          almacenDescifrado=almacenDescifrado+txtDescifrado;
-      } else if (numAscii2>=97 && numAscii2<=122) {
-          if ((numAscii2-clave2)<97) {
-            var descifCesar = numAscii2-clave2+26;
-            var txtDescifrado= String.fromCharCode(descifCesar);            
-          } else {
-            var descifCesar = numAscii2-clave2;
-            var txtDescifrado= String.fromCharCode(descifCesar);
-          }
-          almacenDescifrado=almacenDescifrado+txtDescifrado;
-      }
+          almacenDescifrado = almacenDescifrado+txtDescifrado;
+          //si var mensaje está en minúscula, entonces:
+        }  else if (numAscii2>=97 && numAscii2<=122) {
+          descifCesar= ((numAscii2-122 + parseInt(clave2))%26+122);
+          txtDescifrado= String.fromCharCode(descifCesar);
+          almacenDescifrado = almacenDescifrado+txtDescifrado;
+        } 
     } return almacenDescifrado
   }
 };
-
-
-
 
 export default cipher;

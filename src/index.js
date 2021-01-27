@@ -3,8 +3,6 @@
 
 import cipher from './cipher.js';
 
-console.log(cipher);
-
 //Ver las páginas de HTML
 document.getElementById('pag1').style.display = 'block';
 document.getElementById('pag2').style.display = 'none';
@@ -59,7 +57,7 @@ btnCifra.addEventListener('click', function() {
 const btnDescifra= document.getElementById('botonDescifra');
 btnDescifra.addEventListener('click', function () {
     var mnsCifrado= document.getElementById('txtDescifrar').value;
-    var clave2= parseInt(document.getElementById('numClave2').value)%26;
+    var clave2= document.getElementById('numClave2').value;
     if (mnsCifrado==""|| clave2=="") {
         alert("El Cosmo necesita tu mensaje y clave.");
     }else{
