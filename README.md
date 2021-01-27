@@ -2,71 +2,65 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+- [Cifrado César](#cifrado-césar)
+  - [Índice](#índice)
+  - [1. "MYSTIKÓ"](#1-mystikó)
+    - [1.1. Usuario](#11-usuario)
+    - [1.2. Aplicativo web](#12-aplicativo-web)
+    - [1.3. Proceso creativo](#13-proceso-creativo)
+    - [1.4. Prototipo](#14-prototipo)
+  - [2. Objetivos de aprendizaje](#2-objetivos-de-aprendizaje)
+    - [HTML y CSS](#html-y-css)
+    - [DOM](#dom)
+    - [JavaScript](#javascript)
+    - [Testing](#testing)
+    - [Estructura del código y guía de estilo](#estructura-del-código-y-guía-de-estilo)
+    - [Git y GitHub](#git-y-github)
+    - [UX](#ux)
+  - [3. Consideraciones generales](#3-consideraciones-generales)
+  - [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
+    - [Definición del producto](#definición-del-producto)
+    - [Interfaz de usuario (UI)](#interfaz-de-usuario-ui)
+    - [Scripts / Archivos](#scripts--archivos)
+  - [5. Consideraciones técnicas](#5-consideraciones-técnicas)
+  - [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+    - [Primeros pasos](#primeros-pasos)
+    - [Recursos y temas relacionados](#recursos-y-temas-relacionados)
+  - [7. Checklist](#7-checklist)
+    - [Parte Obligatoria](#parte-obligatoria)
+    - [Parte Opcional: "Hacker edition"](#parte-opcional-hacker-edition)
 
 ***
 
-## 1. Preámbulo
+## 1. "MYSTIKÓ"
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+### 1.1. Usuario
+“Mystikó” ha sido creado para mujeres feministas cuya religión las restringe de expresar sus pensamientos y sentimientos. Ellas luchan contra el machismo y necesitan buscar una manera de ocultar sus planes. Para ello, el Cosmo es su gran aliado. Esta omnipotente dimensión conoce absolutamente todo y es capaz de ayudar a féminas para que continúen con su misión de liberarse y emanciparse de un mundo machista.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
-
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+### 1.2. Aplicativo web
+Técnicamente, “Mystikó” es un aplicativo web que encripta y desencripta mensajes usando la técnica del Cifrado Cesar. Es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto. Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 * La letra A se cifra como D.
 * La palabra CASA se cifra como FDVD.
 * Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 * Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+La temática es el Universo y la Mujer. La complicidad de lo misterioso y oculto que se crea en un marco exotérico. De ahí, nace el nombre del aplicativo: “Mystikó”. 
 
-## 2. Resumen del proyecto
+### 1.3. Proceso creativo
+Hoy en día, existe más movimientos feministas. Sin embargo, la expresión de esta lucha genera represalias para mujeres que tienen una religión restrictiva, como el islam. Se considera necesario apoyar este tipo de causas de todas las maneras posibles. Por ello, se creó “Mystikó”. Se desea continuar la reivindicación del papel de las mujeres en este tipo de religiones. Así, seguir abogando por la igualdad completa sin importar el sexo o género, tanto en la vida pública como en la privada y justica social.
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+La imagen del prototipo está en la carpeta "imagen" con el nombre de "prototipo.jpg"
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+La paleta de colores es blanco y negro. Los gráficos han sido escogidos teniendo en cuenta la relación exotérica de la mujer y el Universo.
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+### 1.4. Prototipo
 
-## 3. Objetivos de aprendizaje
-
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+## 2. Objetivos de aprendizaje
 
 ### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [ ] Uso de HTML semántico.
 * [ ] Uso de selectores de CSS.
 * [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
@@ -105,15 +99,15 @@ como tecnologías.
 * [ ] Diseñar la aplicación pensando y entendiendo al usuario.
 * [ ] Crear prototipos para obtener feedback e iterar.
 * [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [ ] La aplicación tiene una usuaria definida. Con ello, se desea tener claro cómo será la experiencia, el diseño, paleta de colores e importancia del aplicativo.
 
-## 4. Consideraciones generales
+## 3. Consideraciones generales
 
-* El proyecto es individual. Recuerda que cada una aprende a diferente ritmo.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
   te preocupes, lo aprenderás durante este proyecto.
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 4. Criterios de aceptación mínimos del proyecto
 
 Usa este alfabeto simple (solamente mayúsculas y sin ñ):
 
@@ -160,21 +154,7 @@ La interfaz debe permitir al usuario:
 * `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
 
-## 6. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-La descripción general de este proyecto no menciona qué pasaría con las letras
-minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El
-boilerplate incluye algunos tests (comentados en principio) que puedes usar como
-punto de partida para implementar el soporte para estos casos.
-
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del
-hacker edition te invitamos a explorar también esta caso por tu cuenta.
-
-## 7. Consideraciones técnicas
+## 5. Consideraciones técnicas
 
 La lógica del proyecto debe estar implementada completamente en JavaScript. En
 este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro
@@ -227,7 +207,7 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
 ***
 
-## 8. Pistas, tips y lecturas complementarias
+## 6. Pistas, tips y lecturas complementarias
 
 ### Primeros pasos
 
@@ -316,7 +296,7 @@ Organización del Trabajo:
   poco a lo largo del -_bootcamp_.
 * [Guía para Cifrado César](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
 
-## 9. Checklist
+## 7. Checklist
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 

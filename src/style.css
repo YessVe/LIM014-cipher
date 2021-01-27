@@ -1,0 +1,101 @@
+html {
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+/** 1ra pagina **/
+
+h1 {
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+    font-size: 60px;
+    background-color: #efefef;
+    padding: 20px; /*cantidad de espacio entre el contenido de h1
+    y su borde. Nemotecnia: cuán flaquita es la persona*/
+    margin: 10px; /*cuánto espacio deseas con la otra persona*/
+}
+
+/* La idea era que coja la imagen de la pág 1 y 4, pero la 4ta se distorsionaba*/
+.imgbig {
+    width: 20%;
+    margin: 15px;
+}
+
+#pag4 img{
+    width: 18%;
+    margin: 15px;
+}
+
+button{
+    padding: 15px;
+    margin: 20px 10px 0px 10px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #001064;
+    text-transform: lowercase;
+    color: white;
+}
+
+
+/** 2da página**/
+
+.imgsmall {
+    width: 15%;
+    margin: 20px;
+    border: solid;
+    border-radius: 40%;
+}
+
+textarea{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    margin: 20px;
+    width: 400px;
+    height: 80px;
+}
+
+input{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+}
+
+.box1{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    width: 500px;
+}
+
+.box2{
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    width: 200px;
+}
+
+/* consigo poner los cuadritos alineados y en el centro
+para la pág 2, 3*/
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
