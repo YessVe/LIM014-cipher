@@ -62,15 +62,15 @@ La paleta de colores es blanco y negro. Los gráficos han sido escogidos teniend
 
 ### 1.5. Prototipo de alta fidelidad
 
-![prototipo-alta-fidelidad-1](https://user-images.githubusercontent.com/77126999/106083444-841c6800-60ea-11eb-9f7b-9aa170858666.png)
+![prototipo-alta-fidelidad-1](https://user-images.githubusercontent.com/77126999/106197619-f0e24180-6180-11eb-9897-7cdbae254351.png)
 
-![prototipo-alta-fidelidad-2](https://user-images.githubusercontent.com/77126999/106083476-91d1ed80-60ea-11eb-8004-c6df442c0a08.png)
+![prototipo-alta-fidelidad-2](https://user-images.githubusercontent.com/77126999/106197902-40287200-6181-11eb-88fa-0d26b51ed05e.png)
 
-![prototipo-alta-fidelidad-3](https://user-images.githubusercontent.com/77126999/106083504-9d251900-60ea-11eb-9dc1-065be84bec0c.png)
+![prototipo-alta-fidelidad-3](https://user-images.githubusercontent.com/77126999/106197926-49194380-6181-11eb-8907-4560f785e919.png)
 
-![prototipo-alta-fidelidad-4](https://user-images.githubusercontent.com/77126999/106083531-a4e4bd80-60ea-11eb-80b4-75199b1808a6.png)
+![prototipo-alta-fidelidad-4](https://user-images.githubusercontent.com/77126999/106197950-546c6f00-6181-11eb-9259-50ac84567dff.png)
 
-![prototipo-alta-fidelidad-5](https://user-images.githubusercontent.com/77126999/106083555-b037e900-60ea-11eb-95ee-f9e460b09069.png)
+![prototipo-alta-fidelidad-5](https://user-images.githubusercontent.com/77126999/106197966-5b937d00-6181-11eb-9a23-88ab2c7700c9.png)
 
 ### 1.6. Feedback del usuario
 
@@ -103,7 +103,9 @@ La paleta de colores es blanco y negro. Los gráficos han sido escogidos teniend
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+El test del proyecto fue aprobado:
+
+![Test Pass](https://user-images.githubusercontent.com/77126999/106198062-88e02b00-6181-11eb-8456-22206826cea7.png)
 
 ### Estructura del código y guía de estilo
 

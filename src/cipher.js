@@ -40,7 +40,7 @@ const cipher = {
           almacenDescifrado = almacenDescifrado+txtDescifrado;
           //si var mensaje está en minúscula, entonces:
         }  else if (numAscii2>=97 && numAscii2<=122) {
-          descifCesar= ((numAscii2-122 + parseInt(clave2))%26+122);
+          descifCesar= ((numAscii2-122 - parseInt(clave2))%26+122);
           txtDescifrado= String.fromCharCode(descifCesar);
           almacenDescifrado = almacenDescifrado+txtDescifrado;
         } 
