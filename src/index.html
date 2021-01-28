@@ -13,7 +13,7 @@
         </header>
 
       <!--Primera página del aplicativo-->
-      <div id="pag1" class="pag">
+      <section id="pag1" class="pag">
 
           <img class="imgbig" src="imagen/tres mujeres.png" alt="Logo Mystikó" title="Mystikó">
         
@@ -29,74 +29,74 @@
 
         </section>
 
-      </div> <!--Fin 1ra-->
+      </section> <!--Fin 1ra-->
 
       <!--Segunda página del aplicativo-->
-      <div id="pag2" class="pagina">
+      <section id="pag2" class="pagina">
         <section class="container">
-          <div class="box1">
+          <section class="box1">
             <p>Dime tu secreto:</p>
             <textarea id="txtCifrar" placeholder="Cuéntame" required></textarea> 
-          </div>
+          </section>
 
           <img class="imgsmall" src="imagen/dos manos y el sol.png" alt="Icon2">
           
-          <div class="box2">
+          <section class="box2">
             <p>Escribe tu clave cósmica:</p>
             <!--¿es mejor dejarlo como <p> o usar <label for="clave"></label>?-->
             <input id="numClave" type="number" placeholder="1-26" min="1" max="26" step="1" required>
-          </div>        
+          </section>        
           <button id="botonCifra">Cosmo codifica</button>
         </section>
-      </div> <!--Fin 2da-->
+      </section> <!--Fin 2da-->
 
       <!-- Tercera página del aplicativo -->
-      <div id="pag3" class="pagina">
+      <section id="pag3" class="pagina">
       
         <section class="container">
 
-          <div class="box1">
+          <section class="box1">
             <p>Tu secreto cósmico es:</p>
             <textarea id="txtRspta" rows="4" cols="50" placeholder="Mensaje cósmico"></textarea>
-          </div>
+          </section>
           <img class="imgsmall" src="imagen/mano y universo.png" alt="Icon home">
           <p>-Ahora, el Cosmo y tú lo saben.-</p>            
           <button id="botonHome1">Nuevo mensaje</button>
         
         </section>
 
-      </div> <!--Fin 3ra-->
+      </section> <!--Fin 3ra-->
 
       <!-- Cuarta página del aplicativo -->
-      <div id="pag4" class="pagina">
+      <section id="pag4" class="pagina">
         <section class="container">
-          <div class="box1">
+          <section class="box1">
             <p>El Cosmo te ayudará a descifrar</p>
             <textarea id="txtDescifrar" rows="4" cols="50" placeholder="Dime tu mensaje encripatdo"></textarea>
-          </div>
+          </section>
           <img class="imgsmall" src="imagen/mujer y naturaleza.png" alt="Logo Mystikó">
-          <div class="box2">
+          <section class="box2">
             <p>Escribe tu clave cósmica:</p>
             <!--¿es mejor dejarlo como <p> o usar <label for="clave"></label>?-->
-            <input id="numClave2" type="number" placeholder="1-26" min="1" max="26" step="1" required>
-          </div>
+            <input id="numClave2" type="number" placeholder="1-..." min="1" max="26" step="1" required>
+          </section>
           <button id="botonDescifra">Cosmo ayúdame</button>
         </section>
-      </div> <!--Fin 4ta-->
+      </section> <!--Fin 4ta-->
 
       <!-- Quinta página del aplicativo -->
-      <div id="pag5" class="pagina">
+      <section id="pag5" class="pagina">
         <section class="container">
-          <div class="box1">
+          <section class="box1">
             <p>Aquí, lo tienes:</p>
             <textarea id="txtRspta2" rows="4" cols="50" placeholder="Mensaje desencriptado"></textarea>
-          </div>
+          </section>
           <img class="imgsmall" src="imagen/mano y universo.png" alt="Icon home">
           <p>-Todo poder conlleva una gran responsabilidad.-</p>
           <button id="botonHome2">Nuevo mensaje</button>
         </section>
 
-      </div> <!--Fin 5ta-->
+      </section> <!--Fin 5ta-->
 
       <script src="index.js" type="module"></script>
       <script src="cipher.js" type="module"></script>

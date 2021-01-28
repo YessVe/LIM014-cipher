@@ -8,7 +8,9 @@
     - [1.1. Usuario](#11-usuario)
     - [1.2. Aplicativo web](#12-aplicativo-web)
     - [1.3. Proceso creativo](#13-proceso-creativo)
-    - [1.4. Prototipo](#14-prototipo)
+    - [1.4. Prototipo de baja fidelidad](#14-prototipo-de-baja-fidelidad)
+    - [1.5. Prototipo de alta fidelidad](#15-prototipo-de-alta-fidelidad)
+    - [1.6. Feedback del usuario](#16-feedback-del-usuario)
   - [2. Objetivos de aprendizaje](#2-objetivos-de-aprendizaje)
     - [HTML y CSS](#html-y-css)
     - [DOM](#dom)
@@ -54,7 +56,27 @@ La imagen del prototipo está en la carpeta "imagen" con el nombre de "prototipo
 
 La paleta de colores es blanco y negro. Los gráficos han sido escogidos teniendo en cuenta la relación exotérica de la mujer y el Universo.
 
-### 1.4. Prototipo
+### 1.4. Prototipo de baja fidelidad
+
+![prototipo](https://user-images.githubusercontent.com/77126999/106082439-b2994380-60e8-11eb-84bf-e243b1f867be.jpg)
+
+### 1.5. Prototipo de alta fidelidad
+
+![prototipo-alta-fidelidad-1](https://user-images.githubusercontent.com/77126999/106083444-841c6800-60ea-11eb-9f7b-9aa170858666.png)
+
+![prototipo-alta-fidelidad-2](https://user-images.githubusercontent.com/77126999/106083476-91d1ed80-60ea-11eb-8004-c6df442c0a08.png)
+
+![prototipo-alta-fidelidad-3](https://user-images.githubusercontent.com/77126999/106083504-9d251900-60ea-11eb-9dc1-065be84bec0c.png)
+
+![prototipo-alta-fidelidad-4](https://user-images.githubusercontent.com/77126999/106083531-a4e4bd80-60ea-11eb-80b4-75199b1808a6.png)
+
+![prototipo-alta-fidelidad-5](https://user-images.githubusercontent.com/77126999/106083555-b037e900-60ea-11eb-95ee-f9e460b09069.png)
+
+### 1.6. Feedback del usuario
+
+* [ ] Usuario 1: Al inicio, se deseaba fijar un rango para escribir la clave, pero el feedback de este usuario fue que mejor sea libre, sin restricción.
+
+* [ ] Usuario 2: El mensaje por cifrar y el resultado de este que se muestren en la misma página. Lo mismo para la opción de descrifrar.
 
 ## 2. Objetivos de aprendizaje
 
@@ -85,7 +107,7 @@ La paleta de colores es blanco y negro. Los gráficos han sido escogidos teniend
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
+* [ ] Organizar y sectionidir el código en módulos (Modularización)
 * [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
 * [ ] Uso de linter (ESLINT)
 

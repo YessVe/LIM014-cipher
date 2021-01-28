@@ -76,7 +76,7 @@ btnDescifra.addEventListener('click', function () {
 // Estos son los botones que me llevan a la 1ra pagina
 const btnHome1 = document.getElementById('botonHome1');
 btnHome1.addEventListener('click', function () {
-        divs();
+        sections();
         //agregar la función de limpiar el contenido del txtarea e input
         document.getElementById("txtCifrar").value = "";
         document.getElementById("numClave").value = "";
@@ -84,13 +84,13 @@ btnHome1.addEventListener('click', function () {
 )
 const btnHome2 = document.getElementById('botonHome2');
 btnHome2.addEventListener('click', function () {
-        divs();  
+        sections();  
         //agregar la función de limpiar el contenido del txtarea
         document.getElementById("txtDescifrar").value = "";
         document.getElementById("numClave2").value = "";
     }
 ) 
-function divs(){
+function sections(){
         document.getElementById('pag1').style.display = 'block';
         document.getElementById('pag2').style.display = 'none';
         document.getElementById('pag3').style.display = 'none';
