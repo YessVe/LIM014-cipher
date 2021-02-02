@@ -36,13 +36,16 @@ btnPage4.addEventListener('click', function () {
 //El botón que CIFRA
 const btnCifra= document.getElementById ('botonCifra'); 
 btnCifra.addEventListener('click', function() {
-    var mensaje= document.getElementById('txtCifrar').value;
-    var clave= document.getElementById('numClave').value;
+    let mensaje= document.getElementById('txtCifrar').value;
+    let clave= document.getElementById('numClave').value;
+
+    //true ? 1 : 2
+
     if (mensaje=="" || clave=="") {
         alert("El Cosmo necesita tu mensaje y clave.");
     } else {
   
-       var almacenCifrado= cipher.encode (clave,mensaje);
+       let almacenCifrado= cipher.encode (clave,mensaje);
           
        document.getElementById('txtRspta').value=almacenCifrado;
        document.getElementById('pag1').style.display = 'none';
@@ -56,13 +59,13 @@ btnCifra.addEventListener('click', function() {
 //El botón que DESCIFRA
 const btnDescifra= document.getElementById('botonDescifra');
 btnDescifra.addEventListener('click', function () {
-    var mnsCifrado= document.getElementById('txtDescifrar').value;
-    var clave2= document.getElementById('numClave2').value;
+    let mnsCifrado= document.getElementById('txtDescifrar').value;
+    let clave2= document.getElementById('numClave2').value;
     if (mnsCifrado==""|| clave2=="") {
         alert("El Cosmo necesita tu mensaje y clave.");
     }else{
         
-        var almacenDescifrado = cipher.decode(clave2,mnsCifrado);
+        let almacenDescifrado = cipher.decode(clave2,mnsCifrado);
 
         document.getElementById('txtRspta2').value=almacenDescifrado;
         document.getElementById('pag1').style.display = 'none';
